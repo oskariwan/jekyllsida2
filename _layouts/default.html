@@ -6,7 +6,11 @@
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
   </head>
   <body>
-    {% include navigation.html %}
+    <nav>
+      {% include navigation.html %}
+    </nav>
+    <div class="content">
     {{ content }}
+  </div>
   </body>
 </html>

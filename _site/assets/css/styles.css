@@ -1,2 +1,48 @@
 .current {
-  color: green; }
+  color: green;
+  border-style: solid;
+  padding: 3px; }
+
+body {
+  background-color: skyblue;
+  display: grid;
+  grid-template-rows: 2fr,1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "content"; }
+
+nav {
+  grid-area: nav;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+
+.imagesizing {
+  width: 300px;
+  height: 100px; }
+
+.flexlink {
+  background-color: white;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  text-align: center; }
+
+@media only screen and (min-width: 1068px) {
+  body {
+    background-color: lime;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "content"; }
+
+  nav {
+    grid-area: nav;
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    position: static; } }
