@@ -4,7 +4,10 @@
   padding:3px;
 }
 
-
+.responsive{
+	width: 300px;
+	height:auto;
+}
 
 body{
 	background-color:skyblue;
@@ -12,6 +15,7 @@ body{
 	grid-template-rows: 2fr,1fr;
 	grid-template-columns:1fr ;
 	grid-template-areas:"content"
+						"content2"
 						
 }
 
@@ -37,17 +41,22 @@ nav{
 	
 }
 
-content{
-
+.content{
+	background:linear-gradient(rgb(29, 69, 182),white,rgb(173, 10, 10));
+	max-width:50%;
+}
+.content2{
+	background:linear-gradient(black,orange,red);
+	max-width:50%;
 }
 @media only screen and (min-width: 1068px){
 	body{
 		background-color:lime;
 		display:grid;
-		grid-template-rows: 1fr;
-		grid-template-columns:1fr ;
-		grid-template-areas:"nav"
-							"content"							
+		grid-template-columns:1fr 1fr ;
+		grid-template-areas:"nav nav"
+							"content content2"
+														
 }
 	nav{
 		grid-area:nav;

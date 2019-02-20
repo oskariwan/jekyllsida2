@@ -3,12 +3,16 @@
   border-style: solid;
   padding: 3px; }
 
+.responsive {
+  width: 300px;
+  height: auto; }
+
 body {
   background-color: skyblue;
   display: grid;
   grid-template-rows: 2fr,1fr;
   grid-template-columns: 1fr;
-  grid-template-areas: "content"; }
+  grid-template-areas: "content" "content2"; }
 
 nav {
   grid-area: nav;
@@ -30,13 +34,20 @@ nav {
   font-size: 20px;
   text-align: center; }
 
+.content {
+  background: linear-gradient(#1d45b6, white, #ad0a0a);
+  max-width: 50%; }
+
+.content2 {
+  background: linear-gradient(black, orange, red);
+  max-width: 50%; }
+
 @media only screen and (min-width: 1068px) {
   body {
     background-color: lime;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav" "content"; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nav nav" "content content2"; }
 
   nav {
     grid-area: nav;
