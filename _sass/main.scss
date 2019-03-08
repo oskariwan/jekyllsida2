@@ -70,3 +70,19 @@ nav{
 	}
 	
 }
+.social_link{
+	display:flex ;
+	left:0;
+	top:45%;
+	position:fixed;
+	background-color:purple;
+	border-style:solid;
+	color:red;
+	flex-direction:column;
+	border-radius: 10%;
+	padding:3px;
+}
+.social_item{
+	widows: 30px;
+	height:auto;
+}
