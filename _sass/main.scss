@@ -83,6 +83,27 @@ nav{
 	padding:3px;
 }
 .social_item{
+	display: none; 
 	widows: 30px;
 	height:auto;
+}
+
+@keyframes auglysing{
+	0% { right:0px; top:200px;}
+	20% { right:200px; top:200px;background-color:green;}
+	40% { right:200px; top:500px;}
+	60% { right:0px; top:500px;	}
+	80% { right:0px; top:200px;transform:rotate(0deg);}
+	100% { transform: rotate(360deg);}
+}
+.animation{
+	position:fixed;
+	top:200px;
+	right:0px;
+	width:200px;
+	height:auto;
+	justify-content:center;
+	background-color:purple;
+	animation-name: auglysing;
+	animation-duration: 5s;
 }
