@@ -10,4 +10,4 @@ animation er kúl
        einhverjar spurningar hringdu i 775 7443
 </div>
 
-![kiwi-fruit.jpg](/assets/RICARDO.GIF){:class="img-responsive"}
+![kiwi-fruit.jpg](/jekyllsida2/assets/RICARDO.GIF){:class="img-responsive"}
