@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Animation</title>
+    <title></title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="icon" href="/assets/ass.svg">
   </head>
@@ -27,7 +27,7 @@
    </div>
   
   <div class="flexlink">
-    <a href="/skranning.html" >skra inn</a>
+    <a href="/skranning.html" class="current">skra inn</a>
    </div>
   
 </nav>
@@ -45,25 +45,55 @@
 
     </div>
     <div class="content">
-    <h1>Animation</h1>
+    <h1></h1>
 
 <p>
-  13 Mar 2019
+  
   
   
     - <a href="/authors/jill.html">Jill Smith</a>
   
 </p>
 
-<p>animation er kúl</p>
-
-<div class="animation">
-    reykingar banaður á þessari síðu!!
-    rafsíkarettur eru lika bannaðar!!
-       einhverjar spurningar hringdu i 775 7443
-</div>
-
-
+<fieldset>
+<legend>hallo</legend>
+<form>
+    <div>
+    nafn
+    <input type="text" name="name" placeholder="Full name" required>
+    </div>
+    <div>
+    tolvupost
+    <input type="email" name="email" placeholder="Email address" required>
+    </div>
+    <div>
+    dagsetning
+    <input type="date" name="dagsetning" placeholder="DD/MM/YY" required>
+    </div>
+    <div>ég samþykja skylmalar
+        <input type="checkbox" name="checkbox" required>
+    </div>
+    <div>
+    veldu tolu
+    <select name="tala" required>
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+    </div>
+    <div>
+    Comments
+    <textarea name="comments"></textarea>
+    </div>
+  <label>
+    number
+    <input type="number" name="number" pattern="[0-9]" title="Title" placeholder="number" required /> 
+  </label>
+  <input type="submit" name="submit" value="Panta">
+</form>
+</fieldset>
   </div>
   </body>
 </html>
