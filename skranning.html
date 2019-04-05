@@ -5,6 +5,11 @@ layout: default
 <legend>hallo</legend>
 <form>
     <div>
+      <input type="radio" name="kyn" value="kk"> karlkyn<br>
+      <input type="radio" name="kyn" value="kvk"> kvenkyn<br>
+      <input type="radio" name="kyn" value="hvorugt"> hvorugt<br>  
+    </div>
+    <div>
     nafn
     <input type="text" name="name" placeholder="Full name" required>
     </div>
@@ -15,9 +20,6 @@ layout: default
     <div>
     dagsetning
     <input type="date" name="dagsetning" placeholder="DD/MM/YY" required>
-    </div>
-    <div>ég samþykja skylmalar
-        <input type="checkbox" name="checkbox" required>
     </div>
     <div>
     veldu tolu
@@ -37,6 +39,9 @@ layout: default
     number
     <input type="number" name="number" pattern="[0-9]" title="Title" placeholder="number" required /> 
   </label>
+  <div>ég samþykja skylmalar
+      <input type="checkbox" name="checkbox" required>
+  </div>
   <input type="submit" name="submit" value="Panta">
 </form>
 </fieldset>
